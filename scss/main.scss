@@ -175,30 +175,35 @@ header{
 .facts{
     background-color: $light-green;
     color:$dark-green;
-    h2{
-        align-self:center;
-        color:$dark-green;
-        font-family: $font-1;
-        text-transform: uppercase;
-        margin-bottom:20px;
-        font-size:1.75rem;
-    }
+    
     .wrapper{
         border:4px yellow solid;
         display:flex;
         flex-direction:column;
         align-items: center;
 
+        h2 {
+            color: $dark-green;
+            font-family: $font-1;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 1.75rem;
+    
+        }
+
         .zebra{
             display:flex;
             flex-direction: row-reverse;
             flex-wrap:wrap;
             width:100vw;
-            background-color: pink;
 
             .facts-text {
-                margin-left: 0 20%;
-                background-color: lime;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                flex-basis:calc(50% - 20px - 10%);
+                margin-right:20px;
+                margin-left:10%;
             }
             
         }
@@ -208,23 +213,28 @@ header{
                 max-width:100%;
             }
         }
+
         .kitten{
             display:flex;
             width:100vw;
-            background-color: royalblue;
 
             .facts-text{
-                margin:0 5%;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                flex-basis:calc(50% - 20px - 10%);
+                margin-left:20px;
+                margin-right:10%;
+                
+                }
+                
             }
             
-        }
-        .facts-text{
-            flex-basis:40%;
         }
     
         
     }
-}
+
 
 
 

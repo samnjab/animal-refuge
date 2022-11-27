@@ -373,30 +373,32 @@ header h1 {
   background-color: #C3D3CB;
   color: #152D20;
 }
-.facts h2 {
-  align-self: center;
-  color: #152D20;
-  font-family: "Fredericka the Great";
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-size: 1.75rem;
-}
 .facts .wrapper {
   border: 4px yellow solid;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.facts .wrapper h2 {
+  color: #152D20;
+  font-family: "Fredericka the Great";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
 .facts .wrapper .zebra {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   width: 100vw;
-  background-color: pink;
 }
 .facts .wrapper .zebra .facts-text {
-  margin-left: 0 20%;
-  background-color: lime;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: calc(50% - 20px - 10%);
+  margin-right: 20px;
+  margin-left: 10%;
 }
 .facts .wrapper .facts-img {
   flex-basis: 50%;
@@ -407,11 +409,12 @@ header h1 {
 .facts .wrapper .kitten {
   display: flex;
   width: 100vw;
-  background-color: royalblue;
 }
 .facts .wrapper .kitten .facts-text {
-  margin: 0 5%;
-}
-.facts .wrapper .facts-text {
-  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: calc(50% - 20px - 10%);
+  margin-left: 20px;
+  margin-right: 10%;
 }/*# sourceMappingURL=main.css.map */
