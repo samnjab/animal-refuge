@@ -298,6 +298,18 @@ header{
         }
     }
 
+    footer{
+        background-color: $black;
+        font-size: 0.8rem;
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:2rem;
+            
+        }
+    }
+
 
 
 
