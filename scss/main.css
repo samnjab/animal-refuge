@@ -317,16 +317,17 @@ header h1 {
 
 .button {
   display: flex;
-  background-color: #FCFCFC;
-  color: #152D20;
-}
-.button a {
-  width: 9rem;
-  height: 1.5rem;
-  font-size: 0.9rem;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  background-color: #FCFCFC;
+  width: 8rem;
+  height: 2rem;
+  padding: 0.5rem 0.5rem;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+.button a {
+  color: #152D20;
 }
 
 .friends {
@@ -365,4 +366,26 @@ header h1 {
 }
 .friends .gallary :last-child {
   margin-left: 0;
+}
+
+.facts {
+  background-color: #C3D3CB;
+  color: #152D20;
+}
+.facts .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.facts .wrapper .zebra {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.facts .wrapper .facts-img {
+  flex-basis: 50%;
+}
+.facts .wrapper .facts-img img {
+  max-width: 100%;
+}
+.facts .wrapper .kitten {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

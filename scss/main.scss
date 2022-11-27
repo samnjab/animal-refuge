@@ -113,15 +113,19 @@ header{
 
 .button{
     display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: $white;
-    color: $dark-green;
+    width: 8rem;
+    height: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin:20px 0;
+    font-size: 0.9rem;
+    
     a {
-        width: 9rem;
-        height: 1.5rem;
-        font-size: 0.9rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5rem 1.5rem;
+        color: $dark-green;
+        // background-color: pink;
+        
         
     }
 }
@@ -168,8 +172,31 @@ header{
         }
     }
 
+}
 
-
+.facts{
+    background-color: $light-green;
+    color:$dark-green;
+    .wrapper{
+        display:flex;
+        flex-direction:column;
+        .zebra{
+            display:flex;
+            flex-direction: row-reverse;
+        }
+        .facts-img{
+            flex-basis:50%;
+            img{
+                max-width:100%;
+            }
+        }
+        .kitten{
+            display:flex;
+            
+        }
+    
+        
+    }
 }
 
 
