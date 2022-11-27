@@ -188,7 +188,6 @@ header{
             text-transform: uppercase;
             margin-bottom: 20px;
             font-size: 1.75rem;
-    
         }
 
         .zebra{
@@ -227,12 +226,76 @@ header{
                 margin-right:10%;
                 
                 }
-                
             }
-            
         }
-    
-        
+    }
+
+    .contact{
+        background-color: $dark-green;
+        color: $white;
+        font-family: $font-3;
+        font-size: 0.8rem;
+        line-height:1.25rem;
+        .wrapper{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            .contact-nav{
+                flex-basis:calc(15% - 10px);
+                align-self:flex-end;
+            }
+            .stay-updated{
+                flex-basis:calc(60%);
+                border:none;
+                text-align: center;
+                margin:0 10px;
+                align-self:flex-start;
+                h3{
+                    font-family: $font-2;
+                    text-transform: uppercase;
+                    margin-bottom:20px;
+                }
+
+                label{
+                    font-family: $font-3;
+                    font-size:0.8rem;
+                }
+
+                .subscribe{
+                    display:flex;
+                    margin-top:20px;
+                }
+                
+                input{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border:none;
+                    margin:0;
+                    flex-basis:80%;
+                    height:2rem;
+
+                }
+                button{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    background-color: $black;
+                    color:$white;
+                    border:none;
+                    font-family: $font-2;
+                    text-transform: uppercase;
+                    margin:0;
+                    flex-basis:20%;
+                }
+
+            }
+            .contact-us{
+                flex-basis:calc(25% - 10px);
+                text-align: right;
+                align-self:flex-end;
+            }
+        }
     }
 
 

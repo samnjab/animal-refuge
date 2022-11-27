@@ -417,4 +417,67 @@ header h1 {
   flex-basis: calc(50% - 20px - 10%);
   margin-left: 20px;
   margin-right: 10%;
+}
+
+.contact {
+  background-color: #152D20;
+  color: #FCFCFC;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+.contact .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .wrapper .contact-nav {
+  flex-basis: calc(15% - 10px);
+  align-self: flex-end;
+}
+.contact .wrapper .stay-updated {
+  flex-basis: 60%;
+  border: none;
+  text-align: center;
+  margin: 0 10px;
+  align-self: flex-start;
+}
+.contact .wrapper .stay-updated h3 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contact .wrapper .stay-updated label {
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+.contact .wrapper .stay-updated .subscribe {
+  display: flex;
+  margin-top: 20px;
+}
+.contact .wrapper .stay-updated input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  margin: 0;
+  flex-basis: 80%;
+  height: 2rem;
+}
+.contact .wrapper .stay-updated button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #000000;
+  color: #FCFCFC;
+  border: none;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  margin: 0;
+  flex-basis: 20%;
+}
+.contact .wrapper .contact-us {
+  flex-basis: calc(25% - 10px);
+  text-align: right;
+  align-self: flex-end;
 }/*# sourceMappingURL=main.css.map */
