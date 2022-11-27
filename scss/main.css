@@ -285,7 +285,6 @@ header h1 {
 }
 
 .suzie {
-  color: #000000;
   background-color: #152D20;
 }
 .suzie .wrapper {
@@ -307,6 +306,7 @@ header h1 {
   text-transform: uppercase;
   font-family: "Fredericka the Great";
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 .suzie .suzie-text p {
   font-family: "Roboto";
@@ -339,8 +339,9 @@ header h1 {
 }
 .friends h2 {
   align-self: center;
-  color: #000000;
+  color: #152D20;
   font-family: "Fredericka the Great";
+  text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 2.5rem;
   display: inline-block;
@@ -372,13 +373,30 @@ header h1 {
   background-color: #C3D3CB;
   color: #152D20;
 }
+.facts h2 {
+  align-self: center;
+  color: #152D20;
+  font-family: "Fredericka the Great";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
 .facts .wrapper {
+  border: 4px yellow solid;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .facts .wrapper .zebra {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: pink;
+}
+.facts .wrapper .zebra .facts-text {
+  margin-left: 0 20%;
+  background-color: lime;
 }
 .facts .wrapper .facts-img {
   flex-basis: 50%;
@@ -388,4 +406,12 @@ header h1 {
 }
 .facts .wrapper .kitten {
   display: flex;
+  width: 100vw;
+  background-color: royalblue;
+}
+.facts .wrapper .kitten .facts-text {
+  margin: 0 5%;
+}
+.facts .wrapper .facts-text {
+  flex-basis: 40%;
 }/*# sourceMappingURL=main.css.map */

@@ -68,14 +68,11 @@ header{
 }
 
 .suzie{
-    color:$black;
     background-color:$dark-green ;
 
     .wrapper{
         display:flex;
         // background-color: pink;
-
-
     
     }
     .suzie-img{
@@ -88,7 +85,6 @@ header{
 
     .suzie-text{
         flex-basis:70%;
-        // background-color: royalblue;
         display:flex;
         flex-direction: column;
 
@@ -96,6 +92,7 @@ header{
             text-transform: uppercase;
             font-family: $font-1;
             font-size:2.5rem;
+            margin-bottom: 10px;;
 
         }
         p{
@@ -141,8 +138,9 @@ header{
 
     h2{
         align-self:center;
-        color:$black;
+        color:$dark-green;
         font-family: $font-1;
+        text-transform: uppercase;
         margin-bottom:20px;
         font-size:2.5rem;
         display:inline-block;
@@ -177,12 +175,32 @@ header{
 .facts{
     background-color: $light-green;
     color:$dark-green;
+    h2{
+        align-self:center;
+        color:$dark-green;
+        font-family: $font-1;
+        text-transform: uppercase;
+        margin-bottom:20px;
+        font-size:1.75rem;
+    }
     .wrapper{
+        border:4px yellow solid;
         display:flex;
         flex-direction:column;
+        align-items: center;
+
         .zebra{
             display:flex;
             flex-direction: row-reverse;
+            flex-wrap:wrap;
+            width:100vw;
+            background-color: pink;
+
+            .facts-text {
+                margin-left: 0 20%;
+                background-color: lime;
+            }
+            
         }
         .facts-img{
             flex-basis:50%;
@@ -192,7 +210,16 @@ header{
         }
         .kitten{
             display:flex;
+            width:100vw;
+            background-color: royalblue;
+
+            .facts-text{
+                margin:0 5%;
+            }
             
+        }
+        .facts-text{
+            flex-basis:40%;
         }
     
         
