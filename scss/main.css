@@ -229,13 +229,30 @@ html {
 html {
   font-family: "Roboto";
   font-size: 125%;
-  color: white;
+  color: #FCFCFC;
 }
 
 .wrapper {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond";
+}
+
+section {
+  padding: 100px;
 }
 
 header {
@@ -260,22 +277,92 @@ header .wrapper nav ul {
 header h1 {
   align-self: center;
   font-family: "Fredericka the Great";
-  font-size: 120px;
+  font-size: 6rem;
   line-height: 117px;
   text-transform: uppercase;
   font-weight: regular;
+  text-align: right;
+}
+
+.suzie {
+  color: #000000;
+  background-color: #152D20;
+}
+.suzie .wrapper {
+  display: flex;
+}
+.suzie .suzie-img {
+  flex-basis: 30%;
+  margin-right: 40px;
+}
+.suzie .suzie-img img {
+  width: 100%;
+}
+.suzie .suzie-text {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.suzie .suzie-text h2 {
+  text-transform: uppercase;
+  font-family: "Fredericka the Great";
+  font-size: 2.5rem;
+}
+.suzie .suzie-text p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.button {
+  display: flex;
+  background-color: #FCFCFC;
+  color: #152D20;
+}
+.button a {
+  width: 9rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.friends {
+  background-color: #C3D3CB;
+}
+.friends .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.friends h2 {
+  align-self: center;
+  color: #000000;
+  font-family: "Fredericka the Great";
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  display: inline-block;
+  width: 20rem;
   text-align: center;
 }
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.friends .gallary {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
 }
-
-a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-family: "Cormorant Garamond";
+.friends .gallary .friends-img {
+  flex-basis: calc(33.3333333333% - 20px);
+  margin: 0 10px;
+}
+.friends .gallary .friends-img img {
+  max-width: 100%;
+}
+.friends .gallary :first-child {
+  margin-left: 0;
+}
+.friends .gallary :last-child {
+  margin-left: 0;
 }/*# sourceMappingURL=main.css.map */
