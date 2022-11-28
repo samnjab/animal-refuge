@@ -253,7 +253,7 @@ a {
 }
 
 section {
-  padding: 100px;
+  padding: 50px;
 }
 
 header {
@@ -375,27 +375,31 @@ header h1 {
   font-family: "Cormorant Garamond";
   text-transform: uppercase;
 }
-.icons .wrapper ul {
+.icons .icon-gallary {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: baseline;
 }
-.icons .wrapper ul li {
+.icons .icon-gallary li {
+  flex-basis: 33.3333333333%;
+  max-width: 300px;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.icons .wrapper ul li .icon-img {
+.icons .icon-gallary li .icon-img {
   width: calc(50px + 5vw);
 }
-.icons .wrapper ul li .icon-img img {
+.icons .icon-gallary li .icon-img img {
   width: 100%;
 }
-.icons .wrapper ul span {
+.icons .icon-gallary span {
   display: block;
 }
-.icons .wrapper ul h2 {
+.icons .icon-gallary h2 {
   display: flex;
   flex-direction: column;
   align-items: center;

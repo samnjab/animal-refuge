@@ -28,7 +28,7 @@ a {
 }
 
 section{
-    padding:100px;
+    padding:50px;
 }
 
 // ------
@@ -177,11 +177,16 @@ header{
     background: $dark-green;
     font-family: $font-2;
     text-transform: uppercase;
-    .wrapper ul{
+    
+    .icon-gallary{
         display:flex;
+        flex-wrap:wrap;
         justify-content: space-around;
         align-items: baseline;
         li{
+            flex-basis:calc(100%/3);
+            max-width:300px;
+            min-width:150px;
             display:flex;
             flex-direction: column;
             justify-content: center;
