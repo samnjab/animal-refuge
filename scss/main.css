@@ -230,6 +230,7 @@ html {
   font-family: "Roboto";
   font-size: 125%;
   color: #FCFCFC;
+  letter-spacing: 1px;
 }
 
 .wrapper {
@@ -369,6 +370,37 @@ header h1 {
   margin-left: 0;
 }
 
+.icons {
+  background: #152D20;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+}
+.icons .wrapper ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.icons .wrapper ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons .wrapper ul li .icon-img {
+  width: calc(50px + 5vw);
+}
+.icons .wrapper ul li .icon-img img {
+  width: 100%;
+}
+.icons .wrapper ul span {
+  display: block;
+}
+.icons .wrapper ul h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .facts {
   background-color: #C3D3CB;
   color: #152D20;
@@ -444,6 +476,7 @@ header h1 {
 }
 .contact .wrapper .stay-updated h3 {
   font-family: "Cormorant Garamond";
+  font-size: 1.1rem;
   text-transform: uppercase;
   margin-bottom: 20px;
 }

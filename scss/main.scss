@@ -5,6 +5,7 @@ html{
     font-family:$font-3;
     font-size:125%;
     color:$white;
+    letter-spacing: 1px;
 }
 
 .wrapper {
@@ -172,6 +173,42 @@ header{
 
 }
 
+.icons{
+    background: $dark-green;
+    font-family: $font-2;
+    text-transform: uppercase;
+    .wrapper ul{
+        display:flex;
+        justify-content: space-around;
+        align-items: baseline;
+        li{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .icon-img{
+                width:calc(50px + 5vw);
+                img{
+                    width:100%;
+                }
+            }
+        }
+        span{
+            display:block;
+        }
+        h2{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            
+            // background-color: pink;
+
+
+        }
+
+    }
+}
+
 .facts{
     background-color: $light-green;
     color:$dark-green;
@@ -252,6 +289,7 @@ header{
                 align-self:flex-start;
                 h3{
                     font-family: $font-2;
+                    font-size: 1.1rem;
                     text-transform: uppercase;
                     margin-bottom:20px;
                 }
