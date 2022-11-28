@@ -365,36 +365,39 @@ header h1 {
   display: flex;
   flex-direction: column;
 }
-.friends h2 {
+.friends .wrapper h2 {
   align-self: center;
   color: #152D20;
   font-family: "Fredericka the Great";
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: calc(1rem + 2vw);
   display: inline-block;
   width: 20rem;
   text-align: center;
 }
-.friends .gallary {
+.friends .wrapper .gallary {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
   width: 100%;
 }
-.friends .gallary .friends-img {
+.friends .wrapper .gallary .friends-img {
   flex-basis: calc(33.3333333333% - 20px);
+  flex-grow: 1;
+  max-width: min(500px, 50% - 20px);
+  min-width: 120px;
   margin: 0 10px;
 }
-.friends .gallary .friends-img img {
+.friends .wrapper .gallary .friends-img img {
   max-width: 100%;
 }
-.friends .gallary :first-child {
+.friends .wrapper .gallary .friends-img:first-child {
   margin-left: 0;
 }
-.friends .gallary :last-child {
-  margin-left: 0;
+.friends .wrapper .gallary .friends-img:last-child {
+  margin-right: 0;
 }
 
 .icons {

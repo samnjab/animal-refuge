@@ -147,47 +147,44 @@ header{
 
 .friends{
     background-color: $light-green;
-
-
     .wrapper{
         display:flex;
-        flex-direction:column;   
-    }
-
-    h2{
-        align-self:center;
-        color:$dark-green;
-        font-family: $font-1;
-        text-transform: uppercase;
-        margin-bottom:20px;
-        font-size:2.5rem;
-        display:inline-block;
-        width:20rem;
-        text-align: center;
-    }
-
-    .gallary{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap:wrap;
-        margin-top:20px;
-        width:100%;
-        .friends-img{
-            flex-basis:calc(100%/3 - 20px);
-            margin:0 10px;
-            
-            img{
-                max-width:100%;
+        flex-direction:column;  
+        h2 {
+            align-self: center;
+            color: $dark-green;
+            font-family: $font-1;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: calc(1rem + 2vw);
+            display: inline-block;
+            width: 20rem;
+            text-align: center;
+        }
+        .gallary {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 100%;
+            .friends-img {
+                flex-basis: calc(100%/3 - 20px);
+                flex-grow:1;
+                max-width: min(500px, 50% - 20px);
+                min-width:120px;
+                margin: 0 10px;
+                img {
+                    max-width: 100%;
+                }
+                &:first-child{
+                    margin-left:0;
+                }
+                &:last-child{
+                    margin-right:0;
+                }
             }
         }
-        :first-child{
-            margin-left:0;
-        }
-        :last-child{
-            margin-left:0;
-        }
     }
-
 }
 
 .icons{
