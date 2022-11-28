@@ -27,10 +27,29 @@ a {
     font-family: $font-2;
     display:inline-block;
     width:100%;
+    height:100%;
+    text-align: center;
 }
 
 section{
     padding:50px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    width: 8rem;
+    height: 2rem;
+    margin: 20px 0;
+    font-size: 0.9rem;
+
+    a {
+        color: $dark-green;
+        padding: 0.5rem 0.5rem;
+
+    }
 }
 
 // ------
@@ -71,9 +90,7 @@ header{
         text-transform: uppercase;
         font-weight:regular;
         text-align: right;
-    }
-
-    
+    } 
 }
 
 .suzie{
@@ -81,22 +98,37 @@ header{
 
     .wrapper{
         display:flex;
-        // background-color: pink;
-    
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: space-between;
     }
     .suzie-img{
         flex-basis:30%;
-        margin-right:40px;
+        min-width:280px;
+        margin-right:20px;
+        margin-bottom:20px;
+        flex-shrink:0;
+        flex-grow:1;
+        max-width: min(calc(70% - 40px), 500px);
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
         img{
-            width:100%;
+            max-width:100%;
         }
     }
 
     .suzie-text{
-        flex-basis:70%;
+        flex-basis:calc(70% - 40px);
+        min-width:280px;
+        margin-right:20px;
+        flex-shrink:4;
+        flex-grow:0;
+        max-width: min(calc(70% - 40px), 500px);
         display:flex;
         flex-direction: column;
-
+        justify-content: space-between;
+    
         h2{
             text-transform: uppercase;
             font-family: $font-1;
@@ -109,30 +141,7 @@ header{
             font-weight: 300;
             font-size: 1rem;
             line-height: 1.5rem;
-        }
-        
-    }
-
-
-    
-}
-
-.button{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $white;
-    width: 8rem;
-    height: 2rem;
-    padding: 0.5rem 0.5rem;
-    margin:20px 0;
-    font-size: 0.9rem;
-    
-    a {
-        color: $dark-green;
-        // background-color: pink;
-        
-        
+        } 
     }
 }
 
