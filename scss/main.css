@@ -412,14 +412,16 @@ header h1 {
   align-items: baseline;
 }
 .icons .icon-gallary li {
-  flex-basis: 33.3333333333%;
+  flex-basis: calc(33.3333333333% - 20px);
+  min-width: 80px;
+  margin: 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .icons .icon-gallary li .icon-img {
-  width: calc(100px + 1vw);
+  width: calc(40px + 4vw);
 }
 .icons .icon-gallary li .icon-img img {
   width: 100%;
@@ -428,7 +430,7 @@ header h1 {
   display: block;
 }
 .icons .icon-gallary h2 {
-  font-size: calc(1.25rem - 1vw);
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
