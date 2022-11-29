@@ -413,15 +413,13 @@ header h1 {
 }
 .icons .icon-gallary li {
   flex-basis: 33.3333333333%;
-  max-width: 300px;
-  min-width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .icons .icon-gallary li .icon-img {
-  width: calc(50px + 5vw);
+  width: calc(100px + 1vw);
 }
 .icons .icon-gallary li .icon-img img {
   width: 100%;
@@ -430,6 +428,7 @@ header h1 {
   display: block;
 }
 .icons .icon-gallary h2 {
+  font-size: calc(1.25rem - 1vw);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -440,7 +439,6 @@ header h1 {
   color: #152D20;
 }
 .facts .wrapper {
-  border: 4px yellow solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -456,33 +454,41 @@ header h1 {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100vw;
 }
 .facts .wrapper .zebra .facts-text {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
   justify-content: center;
   flex-basis: calc(50% - 20px - 10%);
-  margin-right: 20px;
-  margin-left: 10%;
+  flex-grow: 1;
+  margin: 20px 20px 20px 10%;
 }
 .facts .wrapper .facts-img {
   flex-basis: 50%;
+  min-width: 300px;
+  flex-grow: 1;
+  max-width: 800px;
 }
 .facts .wrapper .facts-img img {
   max-width: 100%;
 }
 .facts .wrapper .kitten {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100vw;
 }
 .facts .wrapper .kitten .facts-text {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
   justify-content: center;
   flex-basis: calc(50% - 20px - 10%);
-  margin-left: 20px;
-  margin-right: 10%;
+  flex-grow: 1;
+  margin: 20px 10% 20px 20px;
 }
 
 .contact {

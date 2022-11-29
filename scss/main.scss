@@ -191,7 +191,6 @@ header{
     background: $dark-green;
     font-family: $font-2;
     text-transform: uppercase;
-    
     .icon-gallary{
         display:flex;
         flex-wrap:wrap;
@@ -199,14 +198,14 @@ header{
         align-items: baseline;
         li{
             flex-basis:calc(100%/3);
-            max-width:300px;
-            min-width:150px;
+            // max-width:100px;
+            // min-width:50px;
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .icon-img{
-                width:calc(50px + 5vw);
+                width:calc(100px + 1vw);
                 img{
                     width:100%;
                 }
@@ -216,13 +215,10 @@ header{
             display:block;
         }
         h2{
+            font-size: calc(1.25rem - 1vw);
             display:flex;
             flex-direction:column;
             align-items: center;
-            
-            // background-color: pink;
-
-
         }
 
     }
@@ -233,7 +229,6 @@ header{
     color:$dark-green;
     
     .wrapper{
-        border:4px yellow solid;
         display:flex;
         flex-direction:column;
         align-items: center;
@@ -250,20 +245,25 @@ header{
             display:flex;
             flex-direction: row-reverse;
             flex-wrap:wrap;
+            justify-content: center;
             width:100vw;
 
             .facts-text {
                 display:flex;
                 flex-direction:column;
+                min-width:300px;
                 justify-content: center;
                 flex-basis:calc(50% - 20px - 10%);
-                margin-right:20px;
-                margin-left:10%;
+                flex-grow:1;
+                margin:20px 20px 20px 10%;
             }
             
         }
         .facts-img{
             flex-basis:50%;
+            min-width:300px;
+            flex-grow:1;
+            max-width:800px;
             img{
                 max-width:100%;
             }
@@ -271,15 +271,18 @@ header{
 
         .kitten{
             display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
             width:100vw;
 
             .facts-text{
                 display:flex;
                 flex-direction:column;
+                min-width:300px;
                 justify-content: center;
                 flex-basis:calc(50% - 20px - 10%);
-                margin-left:20px;
-                margin-right:10%;
+                flex-grow:1;
+                margin:20px 10% 20px 20px;
                 
                 }
             }
