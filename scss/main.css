@@ -409,7 +409,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: flex-start;
 }
 .icons .icon-gallary li {
   flex-basis: calc(33.3333333333% - 20px);
@@ -422,6 +422,7 @@ header h1 {
 }
 .icons .icon-gallary li .icon-img {
   width: calc(40px + 4vw);
+  height: calc(40px + 4vw);
 }
 .icons .icon-gallary li .icon-img img {
   width: 100%;

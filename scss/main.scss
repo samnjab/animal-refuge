@@ -195,7 +195,7 @@ header{
         display:flex;
         flex-wrap:wrap;
         justify-content: space-around;
-        align-items: baseline;
+        align-items: flex-start;
         li{
             flex-basis:calc(100%/3 - 20px);
             // max-width:100px;
@@ -207,6 +207,7 @@ header{
             align-items: center;
             .icon-img{
                 width:calc(40px + 4vw);
+                height:calc(40px + 4vw);
                 img{
                     width:100%;
                 }
