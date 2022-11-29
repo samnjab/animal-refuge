@@ -299,20 +299,33 @@ header{
         .wrapper{
             display:flex;
             flex-wrap:wrap;
-            justify-content: space-between;
+            justify-content: center;
+            align-items:center;
+           
             .contact-nav{
-                flex-basis:calc(15% - 10px);
-                align-self:flex-end;
+                flex-basis:calc(20% - 2rem);
+                margin: 20px 1rem;
+                margin-left:0;
+                flex-grow:0;
+                min-width:100px;
+                li{
+                    margin:0.5rem 0;
+                    a {
+                        width:auto;
+                    }
+                    
+                }
             }
             .stay-updated{
-                flex-basis:calc(60%);
+                flex-basis:calc(60% - 2rem);
+                min-width:400px;
                 border:none;
                 text-align: center;
-                margin:0 10px;
-                align-self:flex-start;
+                margin:20px 1rem;
+                flex-grow:1;
                 h3{
                     font-family: $font-2;
-                    font-size: 1.1rem;
+                    font-size: 1.25rem;
                     text-transform: uppercase;
                     margin-bottom:20px;
                 }
@@ -324,7 +337,9 @@ header{
 
                 .subscribe{
                     display:flex;
+                    // flex-wrap:wrap;
                     margin-top:20px;
+                    width:100%;
                 }
                 
                 input{
@@ -334,6 +349,7 @@ header{
                     border:none;
                     margin:0;
                     flex-basis:80%;
+                    flex-grow:1;
                     height:2rem;
 
                 }
@@ -352,9 +368,13 @@ header{
 
             }
             .contact-us{
-                flex-basis:calc(25% - 10px);
+                flex-basis:calc(20% - 2rem);
                 text-align: right;
                 align-self:flex-end;
+                margin-left:20px 1rem;
+                flex-grow:0;
+                min-width:200px;
+                line-height:1.5rem;
             }
         }
     }

@@ -503,22 +503,33 @@ header h1 {
 .contact .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .contact .wrapper .contact-nav {
-  flex-basis: calc(15% - 10px);
-  align-self: flex-end;
+  flex-basis: calc(20% - 2rem);
+  margin: 20px 1rem;
+  margin-left: 0;
+  flex-grow: 0;
+  min-width: 100px;
+}
+.contact .wrapper .contact-nav li {
+  margin: 0.5rem 0;
+}
+.contact .wrapper .contact-nav li a {
+  width: auto;
 }
 .contact .wrapper .stay-updated {
-  flex-basis: 60%;
+  flex-basis: calc(60% - 2rem);
+  min-width: 400px;
   border: none;
   text-align: center;
-  margin: 0 10px;
-  align-self: flex-start;
+  margin: 20px 1rem;
+  flex-grow: 1;
 }
 .contact .wrapper .stay-updated h3 {
   font-family: "Cormorant Garamond";
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -529,6 +540,7 @@ header h1 {
 .contact .wrapper .stay-updated .subscribe {
   display: flex;
   margin-top: 20px;
+  width: 100%;
 }
 .contact .wrapper .stay-updated input {
   -webkit-appearance: none;
@@ -537,6 +549,7 @@ header h1 {
   border: none;
   margin: 0;
   flex-basis: 80%;
+  flex-grow: 1;
   height: 2rem;
 }
 .contact .wrapper .stay-updated button {
@@ -552,9 +565,13 @@ header h1 {
   flex-basis: 20%;
 }
 .contact .wrapper .contact-us {
-  flex-basis: calc(25% - 10px);
+  flex-basis: calc(20% - 2rem);
   text-align: right;
   align-self: flex-end;
+  margin-left: 20px 1rem;
+  flex-grow: 0;
+  min-width: 200px;
+  line-height: 1.5rem;
 }
 
 footer {
